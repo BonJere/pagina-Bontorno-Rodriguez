@@ -23,6 +23,9 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -115,7 +118,7 @@ nav ul li a:hover {
 
 .welcome-section {
     max-width: 800px;
-    margin: 180px auto 50px;
+    margin: 32px;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -123,6 +126,11 @@ nav ul li a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+
+}
+
+#welcome-section {
+    margin-top: 80px;
 }
 
 .welcome-section h2 {
@@ -134,7 +142,6 @@ nav ul li a:hover {
 .welcome-section p {
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-bottom: 15px;
 }
 
 .welcome-section ul {
@@ -261,6 +268,7 @@ nav ul li a:hover {
     color: var(--header-text);
     padding: 20px 0;
     margin-top: 50px;
+    width: 100%;
 }
 
 .footer-container {
